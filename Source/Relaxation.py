@@ -7,7 +7,6 @@ import InputOutputModule
 import MomentsModule
 import TallyModule
 import LenardBernsteinModule
-import LenardBernsteinModule_LDG
 
 polynomialDegree = 2
 
@@ -29,10 +28,7 @@ nQv = nDOFv
 
 nDOFz = nDOFv * nDOFx
 
-UseLDG    = False # --- LDG not fully implemented (do not use)
-Alpha_LDG = 0.0
-
-Profile = 'Maxwell' #( 'TopHat' 'Maxwell' or 'DoubleMaxwell' )
+Profile = 'TopHat' #( 'TopHat' 'Maxwell' or 'DoubleMaxwell' )
 
 if  ( Profile == 'TopHat' ):
     D_1 = 1.0
@@ -163,13 +159,8 @@ VM.ComputeVelocityMoments_DUT( BX_Z, Mesh_V.dx, f, D, U, T )
 
 # --- Initialize Lenard-Bernstein Solver ---
 
-if( UseLDG ):
-    LB = LenardBernsteinModule_LDG.LenardBernsteinSolver_LDG()
-    LB.Initialize( CollFreq, BX_Z, Mesh_V.dx, Mesh_V.x_c, nDOFv, nDOFx, nQv, nQx, Alpha_LDG=Alpha_LDG )
-else:
-    LB = LenardBernsteinModule.LenardBernsteinSolver()
-    LB.Initialize( CollFreq, BX_Z, Mesh_V.dx, Mesh_V.x_c, nDOFv, nDOFx, nQv, nQx )
-
+LB = LenardBernsteinModule.LenardBernsteinSolver()
+LB.Initialize( CollFreq, BX_Z, Mesh_V.dx, Mesh_V.x_c, nDOFv, nDOFx, nQv, nQx )
 
 # --- Write Initial Condition ---
 
