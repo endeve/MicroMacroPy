@@ -29,7 +29,7 @@ nQv = nDOFv
 
 nDOFz = nDOFv * nDOFx
 
-Profile = 'DoubleMaxwell' #( 'TopHat' or 'DoubleMaxwell' )
+Profile = 'TopHat' #( 'TopHat' or 'DoubleMaxwell' )
 
 if  ( Profile == 'TopHat' ):
     D_1 = 1.0
