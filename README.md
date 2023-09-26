@@ -3,6 +3,8 @@ Python code for solving the micro-macro decomposition of the Vlasov-Poisson-Lena
 
 This code was used to generate the results presented in Endeve &amp; Hauck (2022), JCP, 462, 111227.
 
+$f=M(\rho_{f})+g$
+
 ## Basic Code Description
 
 All python source code is located under the _Source_ directory.
