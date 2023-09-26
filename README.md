@@ -21,3 +21,5 @@ Corresponding drivers using the direct method (solving for the kinetic distribut
 As an example, to run the __Relaxation__ problem with the micro-macro method, invoke the following command in a terminal window from the _Source_ directory
 
 >python RelaxationMM.py
+
+During execution, select time slices are written to _HDF5_ files (named _RelaxationMM_00000000.h5_, etc.)
