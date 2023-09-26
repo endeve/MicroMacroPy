@@ -18,6 +18,6 @@ Corresponding drivers using the direct method (solving for the kinetic distribut
 
 ## Running the Code
 
-As an example, to run the __Relaxation__ problem with the micro-macro method, invoke the following command from a terminal in the _Source_ directory
+As an example, to run the __Relaxation__ problem with the micro-macro method, invoke the following command in a terminal window from the _Source_ directory
 
-> python RelaxationMM.py
+>python RelaxationMM.py
