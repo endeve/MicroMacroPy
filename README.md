@@ -3,7 +3,7 @@ Python code for solving the micro-macro decomposition of the Vlasov-Poisson-Lena
 
 This code was used to generate the results presented in Endeve &amp; Hauck (2022), JCP, 462, 111227.
 
-$f=M(\rho_{f})+g$
+In the micro-macro decomposition, the kinetic distribution function is decomposed as $f=M(\rho_{f})+g$, where $M$ is the Maxwellian with the same first moments as $f$; i.e., $\langle M \mathbf{e} \rangle$
 
 ## Basic Code Description
 
