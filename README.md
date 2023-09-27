@@ -22,4 +22,6 @@ As an example, to run the __Relaxation__ problem with the micro-macro method, in
 
 >python RelaxationMM.py
 
-During execution, select time slices are written to _HDF5_ files (named _RelaxationMM_00000000.h5_, etc.)
+During execution, select time slices are written to _HDF5_ files (named _RelaxationMM_00000000.h5_, etc.).
+
+The _MatLab_ function _ReadData.m_ can be used to read data from an _HDF5_ file for plotting.  
